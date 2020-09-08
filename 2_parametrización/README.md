@@ -4,9 +4,18 @@
 - Parametrizado
 - Físicas
 ## Movimiento Parametrizado
-- Lerp(a, b, t)
+- Lineales -> Lerp(a, b, t) -> **L**inear Int**erp**olation
+
+- Oscilatorio -> Senos y Consenos -> Circular
+
+- Parabólicos
+
+  
+
 - Condición de parada
+
 - Mapeo de valores
+
 - Aplicaciónes: escala, transparencia, posición, etc.
 ## Tweening
 - easeIn

@@ -6,5 +6,12 @@ function setup() {
 }
 
 function draw() {
+  background('white')
   game.draw()
+}
+
+function keyPressed(e) {
+  if (e.key == ' ') {
+    game.changeDirection()
+  }
 }

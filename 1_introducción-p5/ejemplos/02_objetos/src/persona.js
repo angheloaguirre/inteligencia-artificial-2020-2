@@ -1,9 +1,14 @@
 class Persona {
-  constructor(nombre) {
-      this.nombre = nombre
+  constructor(nombre, edad) {
+    this.nombre = nombre
+    this.edad = edad
   }
 
   saludar() {
-      console.log('hola, soy ' + this.nombre)
+    console.log('hola, soy ' + this.nombre + ' y tengo ' + this.edad + ' años.')
+  }
+
+  despedir() {
+    console.log('chau')
   }
 }
