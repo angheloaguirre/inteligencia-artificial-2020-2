@@ -14,7 +14,7 @@ class Game {
 
     // variables para hacer lerping
     this.t = 0
-    this.dt = 0.01
+    this.dt = 0.015
   }
 
   draw() {
@@ -42,6 +42,7 @@ class Game {
 
           // se resetea la animación
           this.t = 0
+
           break
         }
 
@@ -57,6 +58,8 @@ class Game {
 
           // se resetea la animación
           this.t = 0
+
+          break
         }
       }
     }
