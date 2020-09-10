@@ -4,13 +4,7 @@
 - Parametrizado
 - Físicas
 ## Movimiento Parametrizado
-- Lineales -> Lerp(a, b, t) -> **L**inear Int**erp**olation
-
-- Oscilatorio -> Senos y Consenos -> Circular
-
-- Parabólicos
-
-  
+- Lineal, Oscilatorio, Circular
 
 - Condición de parada
 
