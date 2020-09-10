@@ -33,28 +33,28 @@ class Game {
         case 'up': {
           // el punto inicial es el antiguo punto final
           this.positionInit = this.positionEnd
-          
+
           // el nuevo punto final se randomiza en bottom
           this.positionEnd = new p5.Vector(random(100, 500), this.bottomLimit)
-          
+
           // se cambia de estado
           this.direction = 'down'
-          
+
           // se resetea la animación
           this.t = 0
           break
         }
-        
+
         case 'down': {
           // el punto inicial es el antiguo punto final
           this.positionInit = this.positionEnd
-          
+
           // el nuevo punto final se randomiza en top
           this.positionEnd = new p5.Vector(random(100, 500), this.topLimit)
-          
+
           // se cambia de estado
           this.direction = 'up'
-          
+
           // se resetea la animación
           this.t = 0
         }
@@ -69,6 +69,19 @@ class Game {
   }
 
   changeDirection() {
-    this.dt *= -1
+    // se intercambian los extremos del lerp
+    let aux = this.positionInit
+    this.positionInit = this.positionEnd
+    this.positionEnd = aux
+
+    // y se invierte el parámetro t para ir hacia el otro lado
+    this.t = 1 - this.t
+
+    // también se debe cambiar la dirección
+    if (this.direction == 'up') {
+      this.direction = 'down'
+    } else {
+      this.direction = 'up'
+    }
   }
 }
