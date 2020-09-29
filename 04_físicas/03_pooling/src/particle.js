@@ -3,7 +3,7 @@ class Particle {
     this.position = new p5.Vector(x, y)
     // velocidad aleatoria
     this.velocity = p5.Vector.random2D().mult(random(5, 10))
-    this.acceleration = new p5.Vector(0, 0)
+    this.acceleration = new p5.Vector(0, 1)
     
     // variable necesaria para hacer pooling
     this.isDead = false
@@ -25,6 +25,6 @@ class Particle {
     // dibujo
     fill('blue')
     if (this.isDead) fill('red')
-    circle(this.position.x, this.position.y, 60)
+    circle(this.position.x, this.position.y, 30)
   }
 }
